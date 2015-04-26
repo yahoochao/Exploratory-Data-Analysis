@@ -1,3 +1,4 @@
+# step 1: set directory, check data file, download zip file, and unzip it
 library(dplyr)
 library(data.table)
 library(tidyr)
@@ -19,7 +20,7 @@ if(!file.exists("./data")) {
 fileUrl<- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileUrl,destfile= "./data/UCI HAR Dataset.zip")
 
-#step 2: unzip the downloaded file
+# step 2: unzip the downloaded file
 unzip(zipfile="./data/UCI HAR Dataset.zip",exdir="./data")
 
 
